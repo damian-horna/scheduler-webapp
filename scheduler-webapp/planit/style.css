@@ -1,0 +1,986 @@
+body{
+	padding: 0;
+	margin: 0;	
+	font-family: 'Lato', sans-serif;
+	background-image: url("img/bg.jpg");
+	height: 100%;
+}
+
+html{
+	height: 100%;
+}
+
+.error{
+	color: red;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.container{
+	min-height: 100%;
+	position: relative;
+}
+
+.sidebar{
+	float: left;
+	width: 20%;
+	background-color: #191919;
+	height:96vh;
+	font-size: 16px;
+}
+
+.option{
+	display: block;
+	min-height: 16vh;
+	text-align: center;  
+}
+
+
+.option:hover{
+	cursor: pointer;
+	background-color: #2c2d2c;
+}
+
+.opt{
+	display: block;
+	min-height: 16vh;
+}
+
+
+.option > a{
+	color: white;
+	display: block;
+	min-height: 16vh;
+	text-decoration: none;
+}
+a{
+	color: white;
+	display: block;
+	text-decoration: none;
+}
+
+.content{
+	width: 80%;
+	float: left;
+	height: 96vh;
+	background-color: #efefef;
+
+}
+.newUsers{
+	width: 100%;
+	height: 96vh;
+	background-color: #efefef;
+}
+
+.newUsersGreeting{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	font-size: 24px;
+	padding: 30px;
+	text-align: center;
+	color: #221356;
+}
+
+#firstLogin{
+	display:block;
+	background-color: #221356;
+	color: white;
+	width: 100px;
+	height: 30px;
+	border-radius: 40px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20px;
+	padding: 5px;
+}
+#firstLogin:hover{
+	background-color: #000134;
+	box-shadow: 2px 2px 8px #000134;
+}
+
+
+h1{
+	margin: 0;
+	color: #221356;
+	font-size: 8vh;
+	text-align: center;
+	padding-bottom: 4vh;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	height: 4vh;
+	font-size: 3vh;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+}
+
+
+.howManyT{
+	padding-top: 10%;
+}
+
+.todayContent{
+	color: #221356;
+	width: 80%;
+	float: left;
+	height: 96vh;
+	background-color: #f7f4f4;
+	overflow: auto;
+}
+
+.WorkAndSchooltodo{
+	background-color: #77010b;	
+	width: 200px;
+	display: inline-block;
+	color: #efefef;
+	margin: 10px;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 5px;
+	text-align: center;
+}
+
+
+
+.deleteme{
+	background-color: #383838;
+	width: 200px;
+	display: inline-block;
+	color: #efefef;
+	margin: 10px;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 5px;
+	text-align: center;
+	opacity: 0.7;
+	transition: opacity 0.5s ease-out;
+}
+.editme{
+	background-color: #383838;
+	width: 200px;
+	display: inline-block;
+	color: #efefef;
+	margin: 10px;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 5px;
+	text-align: center;
+	opacity: 0.7;
+	transition: opacity 0.5s ease-out;
+}
+
+.dow{
+	display: block;
+}
+
+.editme:hover{
+	cursor: pointer;
+	background-color: #221356;
+	width: 200px;
+	display: inline-block;
+	color: #efefef;
+	margin: 10px;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 5px;
+	text-align: center;
+	opacity: 1;
+}
+
+.aweekdays{
+	display:block;
+	width: 210px;
+	height: 210px;
+}
+.amonthdays{
+	color: black !important;
+	display:block;
+	width: 112px;
+	height: 80px;
+	font-size: 22px;
+	text-align: center;
+	border-radius: 100%;
+}
+
+.amonthdaysoff{
+	color: #dedede;
+	display:block;
+	width: 112px;
+	height: 80px;
+	font-size: 22px;
+	text-align: center;
+}
+
+
+.daywrapper{
+	width: 786px;
+	border-bottom: 2px solid #221356
+}
+.daycal{
+	font-size: 18px;
+	text-align: center;
+	display: inline-block;
+	color: #221356;
+	width: 13.888888888888%;
+}
+
+.amonthdays:hover{
+	color: white !important;
+	display:block;
+	width: 110px;
+	height: 80px;
+	font-size: 22px;
+	padding: auto;
+	text-align: center;
+	border-radius: 100%;
+
+	
+
+}
+
+#toedit{
+	display: block;
+}
+
+#todelete{
+	display: block;
+}
+
+.deleteme:hover{
+	cursor: pointer;
+	background-color: #c90000;
+	width: 200px;
+	display: inline-block;
+	color: #efefef;
+	margin: 10px;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 5px;
+	text-align: center;
+	opacity: 1;
+}
+
+.FamilyAndFriendstodo{
+	background-color: #040047;
+	width: 200px;
+	display: inline-block;
+	color: #efefef;
+	margin: 10px;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 5px;
+	text-align: center;
+}
+.Metodo{
+	background-color: #3a753b;
+	width: 200px;
+	display: inline-block;
+	color: #efefef;
+	margin: 10px;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 5px;
+	text-align: center;
+}
+
+.day{
+	display: inline-block;
+	width: 210px;
+	height: 210px;
+	margin: 20px;
+	background: #303030;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 10px;
+	border: 2px solid #000000;
+	text-align: center;
+	font-size: 25px;
+	transition: background 0.2s ease-in-out;
+}
+
+.day:hover{
+		background: #525252;
+		cursor: pointer;
+}
+
+.calendar{
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+#calendarMonth{
+	color: white;
+	padding: 20px;
+	width: 784px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.day1{     
+	display: inline-block;     
+	width: 110px;     
+	height: 80px;
+	margin: 1px;
+	background-color: #f7f4f4;     
+	text-align: center;     
+	font-size: 22px;  
+	opacity: 0.6;
+	transition: opacity 0.5s linear;   
+	border-radius: 100%; 
+}
+
+.dayOff{
+	display: inline-block;     
+	width: 112px;     
+	height: 80px;
+	background-color: #f7f4f4;     
+	text-align: center;     
+	font-size: 22px;   
+}
+
+#rulez{
+	white-space: nowrap;
+	padding: 10px;
+}
+
+
+#rulez > a{
+	color: #09963c;
+}
+
+.day1:hover{
+		background-color: #221356;
+		cursor: pointer;
+		color: white;
+		opacity: 0.9;
+		transition: background-color 0.6s linear;
+		box-shadow: 1px 1px 1px #221356;
+}
+
+#MeTodos{
+	color: black;
+	font-size: 40px;
+}
+
+.loginContent{
+	height: 70vh;
+}
+
+.logo{
+	text-align: center;
+	font-size: 15vh;
+	letter-spacing: 5px;
+	height: 12vh;
+	padding: 2vh;
+	color: white;
+	text-shadow: 2vh 2vh 4vh #000000;
+}
+
+.login{
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10vh;
+	width: 400px;
+	color: black;
+	padding: 30px;
+	background-color: #e6e3e3;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 2vh 2vh 4vh #000000;
+}
+
+.registrationForm{
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 6vh;
+	margin-bottom: 8vh;
+	width: 400px;
+	color: black;
+	padding: 20px;
+	background-color: #e6e3e3;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 2vh 2vh 4vh #000000;
+}
+
+.g-recaptcha{
+	text-align: center; 
+	display: inline-block;
+}
+
+.login > input[type=text],
+.login > input[type=password],
+.registrationForm > input[type=text],
+.registrationForm > input[type=password]
+{
+	width: 300px;
+	background-color: #191919;
+	color: white;
+	border: 2px solid #ddd;
+	border-radius: 10px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 5px;
+}
+
+.login > input[type=text]:focus,
+.login > input[type=password]:focus,
+.registrationForm > input[type=text]:focus,
+.registrationForm > input[type=password]:focus
+{
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 10px 2px rgba(204,204,204,0.9);
+	border: 2px solid #a5cda5;
+	background-color: #191919;
+	color: white;
+}
+
+.login > input[type=submit],
+.registrationForm > input[type=submit]
+{
+	width: 300px;
+	background-color: #36b03c;
+	font-size:20px;
+	color: white;
+	padding: 15px 10px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+
+.login > input[type=submit]:focus,
+.registrationForm > input[type=submit]:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
+
+.login > input[type=submit]:hover,
+.registrationForm > input[type=submit]:hover
+{
+	background-color: #37b93d;
+}
+
+.login > input::-webkit-input-placeholder
+{
+    color: #bcbaba;
+}
+.login > input:focus::-webkit-input-placeholder
+{
+    color: #bcbaba;
+}
+/* Firefox < 19 */
+.login > input:-moz-placeholder
+{
+    color: #bcbaba;
+}
+.login > input:focus:-moz-placeholder
+{
+    color: #bcbaba;
+}
+/* Firefox > 19 */
+.login > input::-moz-placeholder
+{
+    color: #bcbaba;
+}
+.login > input:focus::-moz-placeholder
+{
+    color: #bcbaba;
+}
+/* Internet Explorer 10 */
+.login > input:-ms-input-placeholder
+{
+    color: #bcbaba;
+}
+.login > input:focus:-ms-input-placeholder
+{
+    color: #bcbaba;
+}
+
+
+.registration{
+	color: black;
+	font-size: 18px;
+}
+ 
+.registration > a{
+	color:black;
+	text-decoration: underline;
+}
+
+.todayMenu{
+text-align: center;
+background-color: #191919;
+}
+
+.todayopt{
+	background-color: #191919;
+	cursor: pointer;
+	display: inline-block;
+	width: 26.666%;
+	height: 24px;
+	color: white;
+	padding:4px;
+}
+
+.todayopt:hover{
+	background-color: #2a2a2a;
+}
+
+.ad > textarea {
+   resize: none;
+   height: 20vh;
+   width: 60vh;
+   background-color: #303030;
+   color: white;
+   font-size: 20px;
+}
+
+
+#adding{
+	font-size: 4vh;
+	color: #221356;
+	text-align: center;
+	margin-top: 3vh;
+}
+
+.ad{
+	padding: 10px;
+}
+
+.Addingcontent{
+	color: #221356;
+	width: 80%;
+	float: left;
+	height: 96vh;
+	background-color: #f7f4f4;
+	overflow: auto;
+}
+
+select{
+	background-color: #303030;
+	color: white;
+	width: 60vh;
+	font-size: 20px;
+}
+
+input[type=time]{
+	background-color: #303030;
+	color: white;
+	width: 60vh;
+	font-size: 20px;
+}
+
+input[type=submit]{
+	width: 30vh;
+	background-color: #36b03c;
+	font-size:16px;
+	color: white;
+	padding: 15px 10px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+
+input[type=submit]:focus{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+	box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
+
+input[type=submit]:hover
+{
+	background-color: #37b93d;
+}
+
+/*----------------------- NOTES ---------------------------*/
+.searching-container{
+	background-color: #fffbbc;
+	text-align: center;
+	float: left;
+	width: 220px;
+	min-height: 516px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 20px; 
+	margin-bottom: 10px;
+	box-shadow: 2px 2px 8px #000;
+	border-radius: 10px;
+}
+
+.evrelse-container{
+	position: relative;
+	float: left;
+	height: 516px;
+	width: 750px;
+	background-color: #f7f4f4;
+
+}	
+
+#theRealContent{
+	text-align: left;
+	left: 116px;
+	top: 38px;
+	font-size: 29px;
+	font-family: 'Kalam', cursive;
+	position: absolute;
+	color: black;
+}
+
+#notepad{
+	height: 516px;
+	width: 750px;
+	box-shadow: 2px 2px 8px #000;
+}
+
+.transparentTextSmall{
+	position: absolute;
+	top: -1px;
+	left: 64px;
+	width: 400px;
+	height: auto;
+	resize: none;
+	background-color: #efefef;
+	color: black;
+	border: none;
+	font-size: 29px;
+	box-sizing: border-box;
+	outline: none;
+	font-family: 'Kalam', cursive;
+	background-color: transparent;
+}
+
+.transparentTextBig{
+	position: absolute;
+	top: 86px;
+	left: 0px;
+	width: 540px;
+	height: 340px;
+	resize: none;
+	background-color: #efefef;
+	color: black;
+	border: none;
+	font-size: 29px;
+	box-sizing: border-box;
+	outline: none;
+	font-family: 'Kalam', cursive;
+	background-color: transparent;
+}
+
+.btns{
+	position: absolute;
+	top: 420px;
+	min-width: 580px;
+	text-align: center;
+	bottom: 0px;
+	font-size: 40px;
+	cursor: pointer;
+
+}
+
+#okButton{
+	display: inline-block;
+	color: green;
+	border-radius: 100%;
+}
+#cancelButton{
+	display: inline-block;
+	color: red;
+	border-radius: 100%;
+}
+
+#titleDiv{
+	min-height: 100px;
+}
+
+#descriptionDiv{	
+	min-height: 100%;
+}
+
+
+.searching-container > input[type=text]{
+	width: 130px;
+	background-color: #efefef;
+	color: black;
+	border: 2px solid #aaa;
+	border-radius: 10px;
+	font-size: 20px;
+	background-image: url('img/searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+	box-sizing: border-box;
+	padding: 12px 20px 12px 40px;
+	outline: none;
+	margin-top: 5px;
+	transition: width 0.5s ease-in-out;
+}
+
+.notes-content{
+	background-color: #efefef;
+	margin-top: 10px;
+	min-height: 54vh;
+	max-height: 54vh;
+	border: 2px solid #aaa;
+	border-radius: 10px;
+	overflow: auto;
+}
+
+.newNote{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5px;
+	font-size: 36px;
+	text-align: center;
+	width: 48px;
+	height: 48px;
+	border: 1px solid #3b5682;
+	border-radius: 100%;
+	box-shadow: 2px 2px 2px #000;
+	color: #3b5682;
+	cursor:pointer;
+	background-color: #f7f4f4;
+	transition: background-color 0.4s ease-in-out;
+}
+
+.newNote:hover{
+	color: white;
+	display:block;
+	width: 48px;
+	height: 48px;
+	border: 1px solid #3b5682;
+	box-shadow: 2px 2px 2px #3b5682;
+	background-color: #3b5682;
+	transition: background-color 0.4s ease-in-out;
+
+}
+
+.note{
+	display: block;
+	min-height: 28px;
+	max-height: 28px;
+	color: #3b5682;
+	font-size: 20px;
+	padding: 4px;
+	border: 1px solid #999;
+	white-space: nowrap;
+	overflow:hidden;
+    text-overflow:ellipsis;
+    transition: background-color 0.4s ease-in-out;
+}
+.note:hover{
+	display: block;
+	min-height: 28px;
+	max-height: 28px;
+	color: white;
+	background-color: #3b5682;
+	font-size: 20px;
+	padding: 4px;
+	white-space: nowrap;
+	overflow:hidden;
+    text-overflow:ellipsis;
+     transition: background-color 0.4s ease-in-out;
+}
+
+.searching-container > input[type=text]:focus{
+-webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,204,0.9);
+	-moz-box-shadow: 0px 0px 6px 2px rgba(0,0,204,0.9);
+	box-shadow: 0px 0px 6px 2px rgba(0,0,204,0.9);
+	border: 2px solid #a5cda5;
+	background-color: #efefef;
+	color: #666;
+	width: 100%;
+	transition: width 0.5s ease-in-out;
+}
+
+/*----------------------------------displaying notes-------------------------*/
+#Nwrapper{
+	height: 516px;
+	width: 540px;
+}
+
+#Ntitle{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	height: 96px;
+	width: 100%;
+	overflow: auto;
+}
+
+#Ndesc{
+	text-align: justify;
+	height: 330px;
+	width: 100%;
+	overflow: auto;
+}
+
+#Ndate{
+	position: absolute;
+	width: 540px;
+	top: -36px;
+	text-align: right;
+	font-size: 18px;
+}
+
+#Nbtns{
+	text-align: center;
+	font-size: 40px;
+}
+
+#editButton{
+	cursor: pointer;
+	color: green;
+}
+
+#delButton{
+	cursor: pointer;
+	color: red;
+}
+
+#textareaTit{
+	resize: none;
+	border: none;
+	box-sizing: border-box;
+	outline: none;
+	font-family: 'Kalam', cursive;
+	background-color: transparent;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	height: 96px;
+	width: 100%;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+#textareaDesc{
+	resize: none;
+	border: none;
+	font-size: 29px;
+	box-sizing: border-box;
+	outline: none;
+	font-family: 'Kalam', cursive;
+	background-color: transparent;
+	text-align: justify;
+	height: 300px;
+	width: 100%;
+	overflow: auto;
+}
+
+#editOk{
+	cursor: pointer;
+	color: green;
+}
+
+#editCancel{
+	cursor: pointer;
+	color: red;
+}
+
+#logoutButton{
+	background-color: #dedede;
+	box-shadow: 2px 2px #000;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	font-size: 20px;
+	height: 30px;
+	padding: 2px;
+	color: black; 
+}
+@media screen and (max-width: 768px){
+
+	h1{
+		font-size: 20px;
+	}
+	.todo{
+	width: 160px;
+	display: inline-block;
+	background-color: black;
+	color: #efefef;
+	margin: 3px;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 2px;
+	text-align: center;
+	}
+	.todayContent{
+		color: #221356;
+		width: 80%;
+		float: left;
+		height: 96vh;
+		background-color: #f7f4f4;
+		overflow: auto;
+	}
+	.sidebar{
+	float: left;
+	width: 20%;
+	background-color: #191919;
+	height:96vh;
+	font-size: 12px;
+	}
+
+	.day{
+	display: inline-block;
+	width: 110px;
+	height: 110px;
+	margin: 5px;
+	background-color: #303030;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 10px;
+	border: 2px solid #000000;
+	text-align: center;
+	font-size: 16px;
+	}
+	.aweekdays{
+	display:block;
+	width: 110px;
+	height: 110px;
+}
+	.ad > textarea {
+	resize: none;
+	height: 20vh;
+	width: 60vh;
+	background-color: #303030;
+	color: white;
+	font-size: 12px;
+	}
+	select{
+	background-color: #303030;
+	color: white;
+	width: 60vh;
+	font-size: 12px;
+	}
+
+	input[type=time]{
+		background-color: #303030;
+		color: white;
+		width: 60vh;
+		font-size: 12px;
+	}
+	.ad{
+		font-size: 16px;
+	}
+
+}
+
